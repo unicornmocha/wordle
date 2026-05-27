@@ -36,3 +36,10 @@ input.tile-input {
     text-align: center;
     text-transform: uppercase;
 }
+
+.restart-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}

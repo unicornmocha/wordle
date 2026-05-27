@@ -41,13 +41,19 @@ function wordCompare() {
         tileCounter++;
     }
     if (userInput == randomWord) {
-        alert("Congratulations! You guessed the word!");
-        location.reload()
+        $("h1").text("Congratulations! You guessed the word!");
+        $(".bottom-section").html("<button class='restart-btn'>Restart</button>")
+        // location.reload()
     }
     if (tileCounter > 30) {
-        alert("Game Over! The word was: " + randomWord);
-        location.reload()
+        $("h1").text("Game Over! The word was: " + randomWord);
+        $(".bottom-section").html("<button class='restart-btn'>Restart</button>")
+        // location.reload()
     }
     userInput = "";
 }
+
+$(document).on("click", ".restart-btn", function() {
+    location.reload();
+});
 
