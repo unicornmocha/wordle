@@ -47,15 +47,16 @@ No additional installations or dependencies are required beyond a modern web bro
 - ✅ Keyboard input and backspace functionality implemented
 - ✅ Win/lose conditions implemented
 - ✅ On-page status messages added
+- ✅ Filter invalid keyboard inputs and improve input handling.
 
 ---
 
 ## Upcoming Improvements
 
 - Refactor tile tracking into row/column based logic.
-- Filter invalid keyboard inputs and improve input handling.
 - Improve overall board styling and responsiveness.
 - Expanding list of words used for the game using an external JS file
+- Real dictionary validation for accepted words.
 
 ---
 
@@ -63,7 +64,6 @@ No additional installations or dependencies are required beyond a modern web bro
 
 - Dark mode support.
 - On-screen keyboard with color feedback.
-- Real dictionary validation for accepted words.
 - Better duplicate-letter handling.
 - Local storage for score/streak tracking.
 - Mobile-friendly responsive design.

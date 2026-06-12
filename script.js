@@ -9,23 +9,24 @@ var randomWord = wordList[Math.floor(Math.random() * wordList.length)];
 var userInput = "";
 var inputIndex = 1;
 
-$("body").keypress(function(Event) {
-    if (userInput.length < 5) {
+$("body").keydown(function(Event) {
+    if (/^[a-zA-Z]$/.test(Event.key)) {
+        if (userInput.length < 5) {
         userInput += Event.key;
         $(".t"+inputIndex).html("<h2 class='tile-content'>"+Event.key+"</h2>")
         inputIndex++;
+        }
     }
-    if ((Event.key == "Enter") && (userInput.length == 5)) {
+    else if ((Event.key == "Enter") && (userInput.length == 5)) {
         wordCompare();
     }
-     
-}).keydown(function(Event) {
-    if ((Event.key == "Backspace") && (userInput.length > 0)) {
+    else if ((Event.key == "Backspace") && (userInput.length > 0)) {
         userInput = userInput.slice(0, -1);
         $(".t"+(inputIndex-1)).html("<h2 class='tile-content'> </h2>")
         inputIndex--;
     }
 });
+
 // 3. Compare users input to random word, change input background accordingly
 // 4. Initiate next input sequence
 var tileCounter = 1;
