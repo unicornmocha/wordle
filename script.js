@@ -33,22 +33,22 @@ var tileCounter = 1;
 function wordCompare() {
     for (var i = 0; i < 5; i++) {
         if (userInput[i] == randomWord[i]) {
-            $(".t"+tileCounter).css("background-color", "green");
+            $(".t"+tileCounter).css("background-color", "#6AAA64");
         } else if (randomWord.includes(userInput[i])) {
-            $(".t"+tileCounter).css("background-color", "yellow");
+            $(".t"+tileCounter).css("background-color", "#C9B458");
         } else {
-            $(".t"+tileCounter).css("background-color", "grey");
+            $(".t"+tileCounter).css("background-color", "#787C7E");
         }
         tileCounter++;
     }
     if (userInput == randomWord) {
         $("h1").text("Congratulations! You guessed the word!");
-        $(".bottom-section").html("<button class='restart-btn'>Restart</button>")
+        $(".bottom-section").html("<button class='restart-btn'>New Game</button>")
         // location.reload()
     }
     if (tileCounter > 30) {
         $("h1").text("Game Over! The word was: " + randomWord);
-        $(".bottom-section").html("<button class='restart-btn'>Restart</button>")
+        $(".bottom-section").html("<button class='restart-btn'>New Game</button>")
         // location.reload()
     }
     userInput = "";

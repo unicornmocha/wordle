@@ -47,15 +47,15 @@ No additional installations or dependencies are required beyond a modern web bro
 - ✅ Keyboard input and backspace functionality implemented
 - ✅ Win/lose conditions implemented
 - ✅ On-page status messages added
-- ✅ Filter invalid keyboard inputs and improve input handling.
+- ✅ Filter invalid keyboard inputs and improve input handling
 
 ---
 
 ## Upcoming Improvements
 
+- Add game state management to prevent input after win/loss.
 - Refactor tile tracking into row/column based logic.
-- Improve overall board styling and responsiveness.
-- Expanding list of words used for the game using an external JS file
+- Expanding list of words used for the game using an external JS file.
 - Real dictionary validation for accepted words.
 
 ---

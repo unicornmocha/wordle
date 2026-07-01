@@ -1,8 +1,33 @@
+body {
+    background-color: antiquewhite;
+    color: #2E2E2E;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.press-start-2p-regular {
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.montserrat-instructions {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
 .tile {
     height: 50px;
     width: 50px;
-    border: 2px solid black;
+    border: 2px solid #CFC7BC;
+    border-radius: 5px;
     margin: 2px;
+    background-color: #FFFFFF;
 }
 
 .row {
@@ -13,7 +38,7 @@
 }
 
 #grid-container {
-    background-color: antiquewhite;
+    /* background-color: antiquewhite; */
     width: 300px;
 }
 
@@ -28,7 +53,6 @@ input.tile-input {
     text-align: center;
     font-size: 24px;
     border: none;
-    background-color: transparent;
 }
 
 .tile-content {
@@ -42,4 +66,14 @@ input.tile-input {
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
+    background-color: #6AAA64;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.bottom-section {
+    margin-top: 20px;
+    text-align: center;
+    width: 500px;
 }
